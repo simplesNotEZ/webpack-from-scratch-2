@@ -11,5 +11,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.3",
+    "vuex": "^3.5.1"
   }
 }
