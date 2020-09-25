@@ -1,5 +1,6 @@
 'use strict';
 
+const path = require('path');
 const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
@@ -7,7 +8,7 @@ module.exports = {
   entry: ['./src/main.js'],
   output: {
     filename: 'bundle.js',
-    path: './dist',
+    path: path.resolve(__dirname, './dist'),
   },
   module: {
     rules: [

@@ -10,7 +10,7 @@
     "url": "https://github.com/simplesNotEZ/webpack-from-scratch-2.git"
   },
   "scripts": {
-    "dev": "webpack --config webpack.dev.config.js",
+    "dev": "webpack-dev-server --config webpack.dev.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -24,6 +24,7 @@
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
