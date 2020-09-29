@@ -1,7 +1,9 @@
 <template>
   <div class="app-container">
-    <title-card></title-card>
-    <p class="test-p">Can you see me yet?</p>
+    <title-card />
+    <p class="test-p">
+      Can you see me yet?
+    </p>
     <span style="color: yellow; background-color: red">How bout now?</span>
   </div>
 </template>
