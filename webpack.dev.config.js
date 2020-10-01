@@ -11,10 +11,10 @@ module.exports = {
   entry: ['./src/main.js'],
   // with the inject: true property from html-webpack-plugin (below), this output stuff stopped working
   // So, I'ma comment it out for now
-  // output: {
-  //   filename: 'bundle.js',
-  //   path: path.resolve(__dirname, './dist'),
-  // },
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, './dist'),
+  },
   devServer: {
     hot: true,
     watchOptions: {
