@@ -1,14 +1,13 @@
 <template>
-  <div
-    data-test="title-card-container"
-    class="title-card-div"
-  >
+  <div data-test="title-card-container" class="title-card-div">
     <h1>Adios Mundo!</h1>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'TitleCard',
+};
 </script>
 
 <style lang="scss" scoped>

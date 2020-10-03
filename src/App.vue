@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    <title-card />
+    <perelandra-page />
     <p class="test-p">
       Can you see me yet?
     </p>
@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import TitleCard from './components/atoms/TitleCard';
+import PerelandraPage from './components/molecules/PerelandraPage.vue';
 
 export default {
   name: 'App',
   components: {
-    TitleCard,
+    PerelandraPage,
   },
 };
 </script>
