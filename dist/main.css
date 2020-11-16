@@ -1,0 +1,26 @@
+.title-card-div[data-v-0cde650a] {
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  padding: 1rem 0.75rem;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 1rem;
+}
+
+.app-container[data-v-7ba5bd90] {
+  padding-top: 3rem;
+  background-color: #fff5e6;
+  height: 100vh;
+}
+.h1-class[data-v-7ba5bd90] {
+  background-color: goldenrod;
+  border: 1px solid black;
+  color: green;
+}
+
+.test-p {
+  border: 1px solid red;
+  background-color: black;
+  color: paleturquoise;
+  padding: 5px; }
+

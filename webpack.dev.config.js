@@ -12,18 +12,17 @@ module.exports = {
   entry: ['./src/main.js'],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './dist'),
-    // publicPath: 'dist',
-    // publicPath: 'dist/images',
-    // publicPath: 'src/images/',
-    // publicPath: 'http://localhost:9000/',
-    publicPath: '',
+    // One does not need to set the output dir as dist, as this is the default
+    // I'm just gonna do it for visibility
+    path: path.resolve(__dirname, './dist')
+    // the publicPath option is for pulling assets in from a CDN
   },
   devServer: {
     hot: true,
     watchOptions: {
       poll: true,
     },
+    writeToDisk: true,
     index: 'index.html',
     contentBase: path.resolve(__dirname, './dist'),
     port: 9000,
@@ -84,7 +83,7 @@ module.exports = {
       patterns: [
         {
           from: './src/images',
-          to: './dist/images',
+          to: 'images',
         },
       ],
     }),
