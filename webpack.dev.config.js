@@ -5,25 +5,28 @@ const { VueLoaderPlugin } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
   entry: ['./src/main.js'],
-  // with the inject: true property from html-webpack-plugin (below), this output stuff stopped working
-  // So, I'ma comment it out for now
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, './dist'),
-    // publicPath: 'dist/',
-    publicPath: 'dist/',
+    // publicPath: 'dist',
+    // publicPath: 'dist/images',
+    // publicPath: 'src/images/',
+    // publicPath: 'http://localhost:9000/',
+    publicPath: '',
   },
   devServer: {
     hot: true,
     watchOptions: {
       poll: true,
     },
-    // contentBase: path.resolve(__dirname, 'dist'),
+    index: 'index.html',
+    contentBase: path.resolve(__dirname, './dist'),
+    port: 9000,
   },
   module: {
     rules: [
@@ -33,7 +36,14 @@ module.exports = {
       },
       {
         test: /\.(png|jpg)$/,
-        use: ['file-loader'],
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              esModule: false
+            }
+          }
+        ]
       },
       {
         test: /\.css$/,
@@ -70,14 +80,14 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'main.css',
     }),
-    // new CopyWebpackPlugin({
-    //   patterns: [
-    //     {
-    //       from: './src/images',
-    //       to: './dist/images',
-    //     },
-    //   ],
-    // }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: './src/images',
+          to: './dist/images',
+        },
+      ],
+    }),
   ],
   resolve: {
     extensions: ['*', '.js', '.vue', '.json'],
