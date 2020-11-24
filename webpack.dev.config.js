@@ -12,10 +12,10 @@ module.exports = {
   entry: ['./src/main.js'],
   output: {
     filename: 'bundle.js',
-    // One does not need to set the output dir as dist, as this is the default
+    // One does not need to set the output dir (output.path) as dist, as this is the default
     // I'm just gonna do it for visibility
     path: path.resolve(__dirname, './dist')
-    // the publicPath option is for pulling assets in from a CDN
+    // the publicPath option is for pulling assets in from a CDN. We're not doing that, so we don't need it.
   },
   devServer: {
     hot: true,
@@ -71,9 +71,9 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
+      // index.html the default filename; including for visibility here
       filename: 'index.html',
-      template: 'index.html',
-      inject: true,
+      template: 'index.html'
     }),
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
