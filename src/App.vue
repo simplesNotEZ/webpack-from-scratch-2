@@ -2,9 +2,9 @@
   <div class="app-container">
     <perelandra-page />
     <p class="test-p">
-      Can you see me yet?
+      You can see me?
     </p>
-    <span style="color: yellow; background-color: red">How bout now?</span>
+    <span style="color: yellow; background-color: red">And how bout now?</span>
   </div>
 </template>
 

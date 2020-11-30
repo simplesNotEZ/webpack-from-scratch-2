@@ -5,7 +5,6 @@ const { VueLoaderPlugin } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -77,16 +76,8 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'main.css',
-    }),
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: './src/images',
-          to: 'images',
-        },
-      ],
-    }),
+      filename: 'css-chunk.css',
+    })
   ],
   resolve: {
     extensions: ['*', '.js', '.vue', '.json'],

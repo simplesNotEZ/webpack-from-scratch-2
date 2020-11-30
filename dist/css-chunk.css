@@ -7,6 +7,15 @@
   margin: 1rem;
 }
 
+[data-test="img-div"][data-v-5fd269df] {
+  display: flex;
+  justify-content: center;
+}
+.island-girl-pic[data-v-5fd269df] {
+  height: 30rem;
+  width: 30rem;
+}
+
 .app-container[data-v-7ba5bd90] {
   padding-top: 3rem;
   background-color: #fff5e6;
