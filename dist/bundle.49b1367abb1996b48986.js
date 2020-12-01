@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "c56c2d79b3a0afd27c20";
+/******/ 	var hotCurrentHash = "49b1367abb1996b48986";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1179,7 +1179,7 @@ eval("var Vue; // late bind\n\nvar version;\nvar map = Object.create(null);\n\ni
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"div\",\n    { staticClass: \"app-container\" },\n    [\n      _c(\"perelandra-page\"),\n      _vm._v(\" \"),\n      _c(\"p\", { staticClass: \"test-p\" }, [_vm._v(\"\\n    You can see me?\\n  \")]),\n      _vm._v(\" \"),\n      _c(\n        \"span\",\n        { staticStyle: { color: \"yellow\", \"background-color\": \"red\" } },\n        [_vm._v(\"And how bout now?\")]\n      )\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./src/App.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"div\",\n    { staticClass: \"app-container\" },\n    [\n      _c(\"perelandra-page\"),\n      _vm._v(\" \"),\n      _c(\"p\", { staticClass: \"test-p\" }, [\n        _vm._v(\"\\n    You can see me ya rogerian bastard?\\n  \")\n      ]),\n      _vm._v(\" \"),\n      _c(\n        \"span\",\n        { staticStyle: { color: \"yellow\", \"background-color\": \"red\" } },\n        [_vm._v(\"And how bout now?\")]\n      )\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./src/App.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 

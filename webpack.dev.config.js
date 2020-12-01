@@ -5,12 +5,13 @@ const { VueLoaderPlugin } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
   entry: ['./src/main.js'],
   output: {
-    filename: 'bundle.js',
+    filename: 'bundle.[hash].js',
     // One does not need to set the output dir (output.path) as dist, as this is the default
     // I'm just gonna do it for visibility
     path: path.resolve(__dirname, './dist')
@@ -76,8 +77,9 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'css-chunk.css',
-    })
+      filename: 'css-chunk.[hash].css',
+    }),
+    new CleanWebpackPlugin()
   ],
   resolve: {
     extensions: ['*', '.js', '.vue', '.json'],
